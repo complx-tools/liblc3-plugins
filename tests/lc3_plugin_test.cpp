@@ -5,7 +5,7 @@
 #include <fstream>
 #include <vector>
 #include <lc3_all.hpp>
-#include "ExpressionEvaluator.hpp"
+#include <lc3/ExpressionEvaluator.hpp>
 
 #define IS_EXCEPTION(type) [](const LC3AssembleException& e) {return e.get_id() == type;}
 

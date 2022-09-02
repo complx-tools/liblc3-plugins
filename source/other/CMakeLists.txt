@@ -23,7 +23,7 @@ add_library(
 
 target_link_libraries(
     lc3_bwlcd
-    ${lc3_LIBRARIES}
+    ${LIBLC3_LIBRARY}
     ${wxWidgets_LIBRARIES}
 )
 
@@ -46,7 +46,7 @@ add_library(
 
 target_link_libraries(
     lc3_colorlcd
-    ${lc3_LIBRARIES}
+    ${LIBLC3_LIBRARY}
     ${wxWidgets_LIBRARIES}
 )
 
@@ -68,7 +68,7 @@ add_library(
 
 target_link_libraries(
     lc3_pinger
-    ${lc3_LIBRARIES}
+    ${LIBLC3_LIBRARY}
 )
 
 install(TARGETS lc3_pinger LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR} RUNTIME DESTINATION ${CMAKE_INSTALL_LIBDIR})

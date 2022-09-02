@@ -19,7 +19,7 @@ add_executable(
 
 target_link_libraries(
     lc3_plugin_test_suite
-    ${LC3_LIBRARIES}
+    ${LIBLC3_LIBRARY}
     ${Boost_UNIT_TEST_FRAMEWORK_LIBRARY}
 )
 

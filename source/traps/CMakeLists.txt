@@ -14,7 +14,7 @@ add_library(
 
 target_link_libraries(
     lc3_udiv
-    ${lc3_LIBRARIES}
+    ${LIBLC3_LIBRARY}
 )
 
 install(TARGETS lc3_udiv LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR} RUNTIME DESTINATION ${CMAKE_INSTALL_LIBDIR})

@@ -4,8 +4,8 @@ Priority: optional
 Maintainer: Brandon Whitehead <tricksterguy87@gmail.com>
 Build-Depends: cmake, debhelper (>=11~), liblc3-dev, libwxgtk3.0-dev | libwxgtk3.0-gtk3-dev
 Standards-Version: 4.1.4
-Homepage: https://github.com/complx-tools/liblc3
-Vcs-Git: https://github.com/complx-tools/liblc3/liblc3.git
+Homepage: https://github.com/complx-tools/liblc3-plugins
+Vcs-Git: https://github.com/complx-tools/liblc3/liblc3-plugins.git
 
 Package: liblc3-plugins
 Section: libs

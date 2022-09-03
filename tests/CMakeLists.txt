@@ -6,8 +6,6 @@ if(CMAKE_HOST_UNIX)
     add_definitions(-DBOOST_TEST_DYN_LINK=1)
 endif(CMAKE_HOST_UNIX)
 
-add_definitions(-DPLUGIN_INSTALL_PREFIX=${CMAKE_BINARY_DIR})
-
 set(SRC_TESTS
     lc3_plugin_test.cpp
 )

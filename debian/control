@@ -1,0 +1,16 @@
+Source: liblc3-plugins
+Section: devel
+Priority: optional
+Maintainer: Brandon Whitehead <tricksterguy87@gmail.com>
+Build-Depends: cmake, debhelper (>=11~), liblc3-dev, libwxgtk3.0-dev | libwxgtk3.0-gtk3-dev
+Standards-Version: 4.1.4
+Homepage: https://github.com/complx-tools/liblc3
+Vcs-Git: https://github.com/complx-tools/liblc3/liblc3.git
+
+Package: liblc3-plugins
+Section: libs
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Plugins developed for liblc3. Includes an LCD, Divide/mod trap, Multiply instruction, Random number generator for the LC-3. Intended to be used by comp and complx lc3 simulators.

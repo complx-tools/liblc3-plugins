@@ -1,6 +1,6 @@
 option(ENABLE_RANDOM "Enable the Random Value Plugin" ON)
-option(ENABLE_SECOND_TIMER "Enable the Second Timer Plugin" ON)
-option(ENABLE_TIMER "Enable the Timer Plugin" ON)
+option(ENABLE_SECOND_TIMER "Enable the Second Timer Plugin" OFF)
+option(ENABLE_TIMER "Enable the Timer Plugin" OFF)
 
 if(ENABLE_RANDOM)
 

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 # Ignore warnings about rpath behavior on OS X
 cmake_policy(SET CMP0042 NEW)
-project(liblc3-plugins LANGUAGES CXX)
+project(liblc3-plugins LANGUAGES CXX VERSION 4.20.0)
 include(GNUInstallDirs)
 
 # Add code coverage stuff.
@@ -26,6 +26,7 @@ endif()
 
 # Additional debug flags
 set(CMAKE_CXX_FLAGS_DEBUG "-g -pg")
+set(CMAKE_DEBUG_POSTFIX d)
 # Install directories
 set(CMAKE_INSTALL_LIBDIR lib CACHE STRING "where to install libraries/plugins")
 set(CMAKE_INSTALL_BINDIR bin CACHE STRING "where to install programs")

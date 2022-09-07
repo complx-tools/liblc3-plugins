@@ -66,6 +66,25 @@ BOOST_FIXTURE_TEST_CASE(TestInstructionPlugin, LC3PluginTest)
     BOOST_CHECK_EQUAL(state.regs[3], 0);
 }
 
+BOOST_FIXTURE_TEST_CASE(TestInstructionPluginCursed, LC3PluginTest)
+{
+    const std::string asm_file =
+    ";@plugin filename=lc3_multiply\r\n"
+    ".orig x3000\n"
+    "    LD R0, OTF\n"
+    "    LD R1, EIGHT\n"
+    "    MUL R2, R0, R1\n"
+    "    MUL R3, R0, 4\n"
+    "    HALT\n"
+    "OTF .fill 125\n"
+    "EIGHT .fill 8\n"
+    ".end";
+
+    std::stringstream file(asm_file);
+    lc3_assemble(state, file, options);
+    BOOST_REQUIRE(state.instructionPlugin != nullptr);
+}
+
 BOOST_FIXTURE_TEST_CASE(TestInstructionPluginDisassemble, LC3PluginTest)
 {
     const std::string asm_file =
